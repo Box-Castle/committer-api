@@ -1,4 +1,4 @@
-[![Project Status](http://opensource.box.com/badges/active.svg)](http://opensource.box.com/badges)
+[![Project Status](http://opensource.box.com/badges/active.svg)](http://opensource.box.com/badges)[![Build Status](https://travis-ci.org/Box-Castle/committer-api.svg?branch=master)](https://travis-ci.org/Box-Castle/committer-api)
 
 ## Overview
 
