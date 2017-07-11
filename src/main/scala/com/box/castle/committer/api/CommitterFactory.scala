@@ -112,6 +112,15 @@ trait CommitterFactory extends Closeable {
    */
   def createCommitterExceptionRetryStrategy: RetryStrategy = DefaultRecoverableExceptionRetryStrategy
 
+  /**
+    * Creates a filter which would filter topics that the committer should process
+    *
+    * @return
+    */
+  def createTopicFilter(): TopicFilter = {
+    new TopicFilter()
+  }
+
   val DefaultNoDataBackoffStrategy =
     RandomMinMaxStrategy(FiniteDuration(5, TimeUnit.SECONDS), FiniteDuration(10, TimeUnit.SECONDS))
 
